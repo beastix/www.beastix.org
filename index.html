@@ -11,12 +11,60 @@
 <h2>About Beastix</h2>
 <p>
 Beastix is a project to create a unix-like operating system out of 100% free software that looks and feels like a BSD system while using the Linux kernel and various GNU components.
-The project is currently under development with a 0.1 release coming soon.
+The project is currently under development with a 0.1 release coming soon, when complete it will combine the BSD feel with the software and hardware support of the Linux kernel.
+</p>
+
+<h2>100% Free software</h2>
+<p>
+Beastix is intended to be a completely free software operating system, that means respecting the <a href="http://www.gnu.org/philosophy/free-sw.en.html">4 freedoms</a>. You as the end user have complete control over your computing
+if you use Beastix.
+</p>
+
+<h2>Sub projects</h2>
+<p>
+Beastix is made up of the following sub projects:<br/>
+<ul>
+<li><a href="https://github.com/beastix/beastix">Beastix</a> - The Beastix base system itself contains everything you need to build a working OS<br/></li>
+<li><a href="https://github.com/beastix/beastix-ports">Beastix ports</a> - A ports tree for Beastix originated from NetBSD pkgsrc<br/></li>
+<li><a href="https://github.com/beastix/bsdtools">BSD tools</a> - An ongoing effort to replace busybox with a full BSD toolset based on code from FreeBSD and NetBSD<br/></li>
+</ul>
+<br/>
+In addition Beastix integrates the following 3rd-party components (with local modifications) as part of the base system:<br/>
+<ul>
+ <li>Linux kernel version 3.19 with linux-libre patches and security fixes</li>
+ <li>GNU binutils version 2.22 patched with musl support</li>
+ <li>GNU gcc version 4.7.2 patched with musl support</li>
+ <li>Busybox version 1.23.2</li>
+ <li>musl libc version 1.0.5 with local extensions</li>
+</ul>
+<br/>
+Please note that third-party components have been modified in various ways in order to work well as part of the whole system, it is not recommended to use them outside of Beastix.
 </p>
 
 <h2>Where to get it</h2>
 <p>
 You will find the source code on github at <a href="https://github.com/beastix">https://github.com/beastix</a>. Watch this space for details on the binary release once it is available.
+To build from source you will need an existing GNU/Linux distro (or Beastix itself). See the README included in the source tree for instructions on building.
+</p>
+
+<h2>Helping out</h2>
+<p>
+Beastix needs help! If you would like to help out, send an email to <a href="mailto:joinus@beastix.org">joinus@beastix.org</a>. Alternatively, just submit pull requests and bug reports on github. We need help in the following areas:
+</p>
+<ul>
+ <li>Testing - just download, build and play with Beastix and see below for instructions on reporting bugs</li>
+ <li>Developers - we need people to work on the codebase in general, and on porting BSD tools in particular</li>
+ <li>Security - Beastix needs some quality security auditing</li>
+ <li>Website - It should be obvious what's needed here</li>
+</ul>
+
+<h2>Bug reports</h2>
+<p>
+Bug reports should be submitted as issues on the relevant github project, pull requests containing patches are most useful, but aside from that please ensure bug reports contain as much information as possible about your machine
+and what you were trying to do. Include steps on how to reproduce and full console logs where possible.
+</p>
+<p>
+If you find nonfree software in Beastix, it is sufficient to simply link to it in a github issue and identify in what way it is nonfree.
 </p>
 
 </body>
