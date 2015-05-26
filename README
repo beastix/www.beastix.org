@@ -1,0 +1,3 @@
+A note regarding large files:
+
+github does not allow files over a certain size, therefore such files will be uploaded directly to the hosting provider without going through this repo
